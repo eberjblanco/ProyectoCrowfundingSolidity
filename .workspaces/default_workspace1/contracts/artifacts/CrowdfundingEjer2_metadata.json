@@ -1,0 +1,137 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "direccionContrato",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "creadorProyecto",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "tituloProyecto",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "descripcionProyecto",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "fechaLimite",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "montoObjetivo",
+						"type": "uint256"
+					}
+				],
+				"name": "ProjectEmpezado",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "titulo",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "descripcion",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "duracionEnDias",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "montoARecaudar",
+						"type": "uint256"
+					}
+				],
+				"name": "crearProjecto",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "devolverTodosLosProjects",
+				"outputs": [
+					{
+						"internalType": "contract Project[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/6_CrowdfundingEjer2.sol": "CrowdfundingEjer2"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol": {
+			"keccak256": "0x04d34b3cd5677bea25f8dfceb6dec0eaa071d4d4b789a43f13fe0c415ba4c296",
+			"urls": [
+				"bzz-raw://e7e8b526a6839e5ba14f0d23a830387fec47f7043ce01d42c9f285b709a9d080",
+				"dweb:/ipfs/QmXmhhFmX5gcAvVzNiDPAGA35iHMPNaYtQkACswRHBVTNw"
+			]
+		},
+		"contracts/6_CrowdfundingEjer2.sol": {
+			"keccak256": "0x2f14671219fb3388279ad9ff8d3fa973aaab2599240bb539279e4e141f91af4f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ee4a5d43632220d43b6fb44cf399d224ca43189a3574776e8a1dc629e85d64db",
+				"dweb:/ipfs/Qma6uUg3mH3iWmRyikm1ygeGTNMo4Ui7pPJwaKiTST6Fwd"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,302 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "creadorProyecto",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "tituloProyecto",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "descripcionProyecto",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fechaLimiteRecaudacion",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "montoObjetivo",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "beneficiario",
+						"type": "address"
+					}
+				],
+				"name": "ArtistaPagado",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "mecenas",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "monto",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "totalActual",
+						"type": "uint256"
+					}
+				],
+				"name": "FondosRecibidos",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "artista",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "balanceActual",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "comprobarSiRecaudacionCompletadaOExpirada",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "contribuir",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "descripcion",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "direcciones_mecenas",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "estado",
+				"outputs": [
+					{
+						"internalType": "enum Project.Estado",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fechaCompletado",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fechaLimite",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getDetalles",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "creadorProyecto",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "tituloProyecto",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "descripcionProyecto",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "fechaLimiteRecaudacion",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum Project.Estado",
+						"name": "estadoActual",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "montoActual",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "montoObjetivo",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "objetivo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "titulo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/6_CrowdfundingEjer2.sol": "Project"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts-ethereum-package/contracts/math/SafeMath.sol": {
+			"keccak256": "0x04d34b3cd5677bea25f8dfceb6dec0eaa071d4d4b789a43f13fe0c415ba4c296",
+			"urls": [
+				"bzz-raw://e7e8b526a6839e5ba14f0d23a830387fec47f7043ce01d42c9f285b709a9d080",
+				"dweb:/ipfs/QmXmhhFmX5gcAvVzNiDPAGA35iHMPNaYtQkACswRHBVTNw"
+			]
+		},
+		"contracts/6_CrowdfundingEjer2.sol": {
+			"keccak256": "0x2f14671219fb3388279ad9ff8d3fa973aaab2599240bb539279e4e141f91af4f",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ee4a5d43632220d43b6fb44cf399d224ca43189a3574776e8a1dc629e85d64db",
+				"dweb:/ipfs/Qma6uUg3mH3iWmRyikm1ygeGTNMo4Ui7pPJwaKiTST6Fwd"
+			]
+		}
+	},
+	"version": 1
+}
